@@ -6,11 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateAlunosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('alunos', function (Blueprint $table) {
@@ -23,15 +19,10 @@ class CreateAlunosTable extends Migration
             $table->integer('faltas')->unsigned();
             $table->string('status')->default('em analise');
             $table->timestamps();
-            //$table->softDeletes();
+            $table->softDeletes();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('alunos');
