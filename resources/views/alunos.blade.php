@@ -103,6 +103,7 @@
               <th>Media</th>
               <th>Faltas</th>
               <th>Status</th>
+              <!-- <th>Deletado em</th> -->
               <th></th>
             </tr>
           </thead>
@@ -120,6 +121,7 @@
                   <td>{{$aluno->media}}</td>
                   <td>{{$aluno->faltas}}</td>
                   <td>{{$aluno->status}}</td>
+                  <!-- <td>{{$aluno->deleted_at}}</td> -->
                   <td class="col-xs-2">
 
                       <form class="col-xs-12" action="{{action('AlunoController@deletaAluno', ['id' => $aluno->id])}}" method="POST">

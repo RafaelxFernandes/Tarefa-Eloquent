@@ -13,7 +13,7 @@
 
 
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>        
+        <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>         -->
         
         <!-- Compiled and minified CSS
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
@@ -29,7 +29,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
         <!-- Compiled and minified JavaScript -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->

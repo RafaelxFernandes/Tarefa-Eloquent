@@ -13,52 +13,26 @@ class AlunoController extends Controller
     public function index()
     {
         $alunos = Aluno::all();
-
+        // $alunos = Aluno::withTrashed()->get();
+        
         return view('alunos',['alunos' => $alunos]);
     }
 
 
     public function insereAluno(Request $request)
     {
-        $aluno = new Aluno;
-
-        $aluno->nome = $request->nome;
-        $aluno->registro = $request->registro;
-        $aluno->serie = $request->serie;
-        $aluno->turma = $request->turma;
-        $aluno->faltas = $request->faltas;
-        $aluno->media = $request->media;
-
-        $aluno->save();
-
         return back();
     }
 
 
     public function atualizaAluno(Request $request, $id)
     {
-
-    $aluno_novo = Aluno::find($id);
-
-    $aluno_novo->nome=$request->nome;
-    $aluno_novo->serie=$request->serie;
-    $aluno_novo->turma=$request->turma;
-    $aluno_novo->faltas=$request->faltas;
-    $aluno_novo->media=$request->media;
-
-    $aluno_novo->save();
-
-
-
-
-        return back();
+       return back();
     }
 
     public function deletaAluno($id)
     {
-        $exAluno = Aluno::find($id);
-        $exAluno->delete();
-        return back();
+       return back();
     }
 
 
