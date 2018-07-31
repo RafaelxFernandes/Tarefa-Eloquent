@@ -40,10 +40,10 @@ class AlunoController extends Controller
     public function getAluno(Request $request){
 
         $aluno = new Aluno;
-
         $resposta = $aluno->exemplo($request->id);
 
-        dd($resposta);
+        dd($resposta); // comentar essa linha na segunda parte dos exercicios.
+        return back();
 
     }
 }

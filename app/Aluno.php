@@ -17,7 +17,8 @@ class Aluno extends Model
     //-----------------------------------------------------------------
     //exemplo de função
     public function exemplo($id){
-        return Aluno::find($id);;
+       $resposta = 'insira o seu codigo aqui';
+        return $resposta;
     }
 
 
@@ -33,16 +34,28 @@ class Aluno extends Model
 
     }
 
-    public function destroyAluno($id){
+    // public function exemplo1($id){
+    //     $alunos = Aluno::orderBy('nome', 'asc')->get();
+    //     // $alunos = $alunos->getContent();
+    //     $ordenados = [];
+    //     foreach($alunos as $aluno){
+    //         array_push($ordenados, $aluno->nome);
+    //     }
+    //     return $ordenados;
+    // }
 
-    }
-
-    public function exercicio2($data){
-
-    }
-
-    public function exercicio5(Aluno $aluno){
-
-    }
+    // public function alteraAluno($request){
+        
+    //     if(!$this->registro){
+    //         $this->registro = $request->registro;
+    //     }
+    //     $this->nome = $request->nome;
+    //     $this->turma = $request->turma;
+    //     $this->serie = $request->serie;
+    //     $this->media = $request->media;
+    //     $this->faltas = $request->faltas;
+        
+    //     $this->save();
+    // }
 
 }
